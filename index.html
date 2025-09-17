@@ -7,23 +7,23 @@
     <style>
         body {
             font-family: 'MoolBoran', cursive, sans-serif;
-            background: #111;
+            background: #F3F3F3; /* fundo cinza claro */
             margin: 0;
             padding: 0;
-            color: #eee;
+            color: #222;
         }
         header {
-            background: #8000ff;
+            background: #217346; /* verde Excel */
             color: #fff;
             padding: 1rem 0;
             text-align: center;
             letter-spacing: 2px;
-            box-shadow: 0 2px 8px rgba(128,0,255,0.12);
+            box-shadow: 0 2px 8px rgba(33, 115, 70, 0.12);
         }
         h1 {
             margin-top: 0;
             color: #fff;
-            text-shadow: 0 1px 12px #8000ff55;
+            text-shadow: 0 1px 12px #21734666;
             font-family: 'MoolBoran', cursive, sans-serif;
             font-size: 3rem;
             font-weight: normal;
@@ -31,10 +31,10 @@
         main {
             max-width: 1000px;
             margin: 2rem auto;
-            background: #181028;
+            background: #fff; /* fundo branco */
             border-radius: 8px;
             padding: 2rem;
-            box-shadow: 0 2px 8px rgba(128,0,255,0.1);
+            box-shadow: 0 2px 8px rgba(33, 115, 70, 0.09);
         }
         .gallery {
             display: flex;
@@ -45,37 +45,37 @@
         .gallery-item {
             flex: 1 1 300px;
             max-width: 300px;
-            background: #2a1840;
+            background: #D9EAD3; /* verde claro Excel */
             border-radius: 8px;
-            box-shadow: 0 1px 8px rgba(128,0,255,0.13);
+            box-shadow: 0 1px 8px rgba(33, 115, 70, 0.13);
             padding: 1rem;
             display: flex;
             flex-direction: column;
             align-items: center;
-            border: 2px solid #8000ff44;
+            border: 2px solid #21734633;
             transition: transform 0.3s cubic-bezier(.22,.68,.51,1.01), box-shadow 0.3s;
         }
         .gallery-item:hover {
             transform: scale(1.13);
-            box-shadow: 0 4px 24px rgba(128,0,255,0.29);
+            box-shadow: 0 4px 24px rgba(33, 115, 70, 0.18);
             z-index: 1;
         }
         .gallery-item img {
             max-width: 100%;
             border-radius: 6px;
             margin-bottom: 1rem;
-            box-shadow: 0 2px 8px rgba(128,0,255,0.13);
+            box-shadow: 0 2px 8px rgba(33, 115, 70, 0.13);
             background: #fff;
         }
         .gallery-item h2 {
             font-size: 1.1rem;
             margin: 0.5rem 0;
-            color: #8000ff;
+            color: #217346;
             font-family: 'MoolBoran', cursive, sans-serif;
         }
         .gallery-item p {
             font-size: 0.95rem;
-            color: #ddd;
+            color: #444;
             font-family: 'MoolBoran', cursive, sans-serif;
         }
         .contact-btn {
@@ -84,7 +84,7 @@
             margin: 2rem 0 1rem 0;
         }
         .contact-btn a {
-            background: #8000ff;
+            background: #217346;
             color: #fff;
             font-family: 'MoolBoran', cursive, sans-serif;
             text-decoration: none;
@@ -92,14 +92,14 @@
             padding: 0.8rem 2.5rem;
             border-radius: 40px;
             border: none;
-            box-shadow: 0 2px 12px rgba(128,0,255,0.18);
+            box-shadow: 0 2px 12px rgba(33, 115, 70, 0.18);
             transition: background 0.2s, transform 0.2s;
             display: flex;
             align-items: center;
             gap: 10px;
         }
         .contact-btn a:hover {
-            background: #a366ff;
+            background: #145a32;
             transform: scale(1.05);
         }
         .contact-btn svg {
@@ -109,30 +109,30 @@
         }
         footer {
             text-align: center;
-            color: #bbb;
-            background: #181028;
+            color: #2e5635;
+            background: #E5E5E5; /* cinza claro Excel */
             padding: 1.2rem 0 1.2rem 0;
             font-size: 1.1rem;
-            border-top: 1px solid #8000ff44;
+            border-top: 1px solid #21734644;
             margin-top: 2rem;
         }
         .linkedin-link {
             display: inline-flex;
             align-items: center;
-            color: #8000ff;
+            color: #217346;
             text-decoration: none;
             margin-left: 10px;
             font-size: 1.1rem;
             transition: color 0.2s;
         }
         .linkedin-link:hover {
-            color: #a366ff;
+            color: #145a32;
         }
         .linkedin-link svg {
             margin-right: 4px;
             width: 18px;
             height: 18px;
-            fill: #8000ff;
+            fill: #217346;
             vertical-align: middle;
         }
         @media (max-width: 700px) {
