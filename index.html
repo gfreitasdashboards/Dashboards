@@ -1,12 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meu Portfólio</title>
+    <meta charset="UTF-8">
+    <title>Dashboards G.Freitas</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: 'MoolBoran', cursive, sans-serif;
+            background: #111;
+            margin: 0;
+            padding: 0;
+            color: #eee;
+        }
+        header {
+            background: #8000ff;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+            letter-spacing: 2px;
+            box-shadow: 0 2px 8px rgba(128,0,255,0.12);
+        }
+        h1 {
+            margin-top: 0;
+            color: #fff;
+            text-shadow: 0 1px 12px #8000ff55;
+            font-family: 'MoolBoran', cursive, sans-serif;
+            font-size: 3rem;
+            font-weight: normal;
+        }
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            background: #181028;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 8px rgba(128,0,255,0.1);
+        }
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+        }
+        .gallery-item {
+            flex: 1 1 300px;
+            max-width: 300px;
+            background: #2a1840;
+            border-radius: 8px;
+            box-shadow: 0 1px 8px rgba(128,0,255,0.13);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 2px solid #8000ff44;
+        }
+        .gallery-item img {
+            max-width: 100%;
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            box-shadow: 0 2px 8px rgba(128,0,255,0.13);
+            background: #fff;
+        }
+        .gallery-item h2 {
+            font-size: 1.1rem;
+            margin: 0.5rem 0;
+            color: #8000ff;
+            font-family: 'MoolBoran', cursive, sans-serif;
+        }
+        .gallery-item p {
+            font-size: 0.95rem;
+            color: #ddd;
+            font-family: 'MoolBoran', cursive, sans-serif;
+        }
+        .contact-btn {
+            display: flex;
+            justify-content: center;
+            margin: 2rem 0 1rem 0;
+        }
+        .contact-btn a {
+            background: #8000ff;
+            color: #fff;
+            font-family: 'MoolBoran', cursive, sans-serif;
+            text-decoration: none;
+            font-size: 1.3rem;
+            padding: 0.8rem 2.5rem;
+            border-radius: 40px;
+            border: none;
+            box-shadow: 0 2px 12px rgba(128,0,255,0.18);
+            transition: background 0.2s, transform 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .contact-btn a:hover {
+            background: #a366ff;
+            transform: scale(1.05);
+        }
+        .contact-btn svg {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+        }
+        footer {
+            text-align: center;
+            color: #bbb;
+            background: #181028;
+            padding: 1.2rem 0 1.2rem 0;
+            font-size: 1.1rem;
+            border-top: 1px solid #8000ff44;
+            margin-top: 2rem;
+        }
+        .linkedin-link {
+            display: inline-flex;
+            align-items: center;
+            color: #8000ff;
+            text-decoration: none;
+            margin-left: 10px;
+            font-size: 1.1rem;
+            transition: color 0.2s;
+        }
+        .linkedin-link:hover {
+            color: #a366ff;
+        }
+        .linkedin-link svg {
+            margin-right: 4px;
+            width: 18px;
+            height: 18px;
+            fill: #8000ff;
+            vertical-align: middle;
+        }
+        @media (max-width: 700px) {
+            main {
+                padding: 1rem;
+            }
+            .gallery {
+                gap: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
-  <h1>Bem-vindo ao meu portfólio de Dashboards!</h1>
-  <p>Este é meu primeiro site publicado com GitHub Pages.</p>
+    <header>
+        <h1>Dashboards G.Freitas</h1>
+    </header>
+    <main>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/projeto1.jpg" alt="Análises de Streams">
+                <h2>Análises de Streams</h2>
+                <p>Uma análise interativa direto no Excel sobre o mercado de streaming no Brasil</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/projeto2.jpg" alt="Vendas Doceria">
+                <h2>Vendas Doceria</h2>
+                <p>Uma análise interativa do Excel que traz de forma rápida os resultados de vendas de uma doceria</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/projeto3.jpg" alt="Análise de Vendas">
+                <h2>Análise de Vendas</h2>
+                <p>Outra análise interativa de vendas direto do Excel</p>
+            </div>
+        </div>
+        <div class="contact-btn">
+            <a href="https://wa.me/5516991992951" target="_blank" rel="noopener">
+                <svg viewBox="0 0 32 32"><path d="M16.003 3C9.374 3 3.998 8.379 3.998 15.008c0 2.608.766 5.048 2.219 7.152L3 29l7.04-3.143A12.89 12.89 0 0 0 16.003 27c6.629 0 12.006-5.376 12.006-11.992C28.009 8.38 22.632 3 16.003 3zm0 21.938c-2.164 0-4.287-.637-6.093-1.84l-.437-.277-4.182 1.868.892-4.098-.284-.422a10.927 10.927 0 0 1-1.914-6.16c0-6.009 4.89-10.899 10.898-10.899 6.01 0 10.9 4.89 10.9 10.899 0 6.009-4.89 10.899-10.9 10.899zm5.992-8.143c-.328-.164-1.946-.96-2.246-1.07-.3-.109-.518-.164-.736.165-.219.328-.845 1.07-1.036 1.289-.191.219-.382.246-.71.082-.328-.164-1.387-.511-2.644-1.631-.977-.872-1.637-1.948-1.83-2.276-.191-.328-.021-.505.143-.669.146-.146.328-.382.492-.573.164-.191.219-.328.328-.546.109-.219.055-.41-.027-.573-.082-.164-.736-1.781-1.008-2.442-.267-.642-.538-.555-.736-.564-.191-.008-.409-.01-.627-.01-.219 0-.573.082-.873.41-.3.328-1.145 1.12-1.145 2.73 0 1.611 1.172 3.167 1.336 3.388.164.219 2.308 3.528 5.591 4.81.782.337 1.391.539 1.867.689.784.25 1.497.215 2.06.131.629-.094 1.946-.796 2.222-1.566.274-.771.274-1.43.191-1.566-.082-.137-.3-.219-.627-.382z"></path></svg>
+                Entrar em contato via WhatsApp
+            </a>
+        </div>
+    </main>
+    <footer>
+        Criado por Greicy Freitas
+        <a class="linkedin-link" href="https://www.linkedin.com/in/greicy-freitas" target="_blank" rel="noopener" title="LinkedIn">
+            <svg viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.966 0-1.75-.784-1.75-1.75s.784-1.75 1.75-1.75 1.75.784 1.75 1.75-.784 1.75-1.75 1.75zm15.5 11.27h-3v-5.604c0-1.336-.026-3.057-1.865-3.057-1.865 0-2.151 1.454-2.151 2.956v5.705h-3v-10h2.885v1.367h.041c.403-.763 1.389-1.565 2.858-1.565 3.057 0 3.623 2.014 3.623 4.632v5.566z"/></svg>
+            LinkedIn
+        </a>
+    </footer>
 </body>
 </html>
